@@ -86,13 +86,23 @@
         .about ul li {
             margin: 10px 0;
             font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .about ul li:before {
+            content: "\2022";
+            color: #ff3333;
+            font-weight: bold;
+            display: inline-block;
+            width: 20px;
+            margin-right: 10px;
         }
 
         .projects {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            justify-content: center;
         }
 
         .projects h3 {
@@ -100,18 +110,31 @@
             text-transform: uppercase;
             font-weight: bold;
             margin-top: 30px;
+            border-bottom: 2px solid #ff3333;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
         .projects ul {
             padding: 0;
             list-style: none;
             text-align: left;
-            display: inline-block;
         }
 
         .projects ul li {
             margin: 10px 0;
             font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .projects ul li:before {
+            content: "\2713";
+            color: #ff3333;
+            font-weight: bold;
+            display: inline-block;
+            width: 20px;
+            margin-right: 10px;
         }
 
         footer {
