@@ -25,6 +25,7 @@
         header h1 {
             margin: 0;
             color: #ff0000;
+            font-size: 2.5em;
             transition: color 0.3s;
         }
 
@@ -63,15 +64,28 @@
             font-size: 2.5em;
             margin-bottom: 20px;
             color: #ff0000;
-            transition: color 0.3s;
+            border-bottom: 2px solid #ff3333;
+            display: inline-block;
+            transition: color 0.3s, border-color 0.3s;
         }
 
         section h2:hover {
             color: #ff3333;
+            border-color: #ff6666;
         }
 
         .about, .projects, .contact {
             margin: 40px 0;
+        }
+
+        .about ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .about ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
         }
 
         .projects {
@@ -81,33 +95,23 @@
             justify-content: center;
         }
 
-        .project-card {
-            background: #1a1a1a;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
-            overflow: hidden;
-            max-width: 300px;
-            transition: transform 0.3s, box-shadow 0.3s;
+        .projects h3 {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 30px;
         }
 
-        .project-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgba(255, 51, 51, 0.6);
+        .projects ul {
+            padding: 0;
+            list-style: none;
+            text-align: left;
+            display: inline-block;
         }
 
-        .project-card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .project-card h3 {
-            margin: 20px;
-            color: #ff0000;
-            transition: color 0.3s;
-        }
-
-        .project-card h3:hover {
-            color: #ff3333;
+        .projects ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
         }
 
         footer {
@@ -115,6 +119,7 @@
             color: #ffffff;
             text-align: center;
             padding: 20px;
+            font-size: 0.9em;
         }
 
         footer a {
@@ -135,7 +140,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
